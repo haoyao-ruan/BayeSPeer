@@ -117,12 +117,12 @@ BayeSPeer.pre <- function(n, r, M, burnin,
       for (i in sample(N)) {   # random update order per sweep (Li et al., 2018)
         
         if (r[i, j] == 1) {
-          upper <- Inf
+          upper <- 100    # end bounds +/-100, as in the reported analyses
           lower <- W[which(r[, j] == 2), j]
           
         } else if (r[i,j] == n) {
           upper <- W[which(r[, j] == n - 1), j]
-          lower <- -Inf
+          lower <- -100
           
         } else {
           
@@ -260,12 +260,12 @@ BayeSPeer <- function(n, r, M, burnin,
       for (i in sample(N)) {   # random update order per sweep (Li et al., 2018)
         
         if (r[i, j] == 1) {
-          upper <- Inf
+          upper <- 100    # end bounds +/-100, as in the reported analyses
           lower <- W[which(r[, j] == 2), j]
           
         } else if (r[i,j] == n) {
           upper <- W[which(r[, j] == n - 1), j]
-          lower <- -Inf
+          lower <- -100
           
         } else {
           

@@ -145,6 +145,11 @@ manuscript does not fix a seed, so small numerical differences from the
 reported results are expected when re-running the code; differences of this
 size do not affect the aggregated rankings or the substantive conclusions.
 
+The samplers keep the latent scores of the first and last ranked
+individuals within ±100, as in the analyses reported in the manuscript.
+With the vague step 1 priors and very small groups, this bound keeps the
+latent scale from drifting.
+
 ---
 
 ## Data & privacy
