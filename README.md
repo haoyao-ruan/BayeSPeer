@@ -11,6 +11,10 @@ and Self Ranking."* This repository provides the Gibbs samplers, the
 data-generating mechanisms, the evaluation metrics, and the full function
 library (including the competing aggregators) used in the study.
 
+**Try it online:** the [BayeSPeer Shiny app](https://bayespeer.shinyapps.io/BayeSPeer/)
+runs BayeSPeer and the baseline methods on your own peer and self ranking data
+in the browser, with no installation. Its source is in [`shiny_app/`](shiny_app/).
+
 ---
 
 ## Repository structure
@@ -27,6 +31,10 @@ BayeSPeer/
 │   └── competing_methods.R     #   Borda family, BIRRA, BiGER
 ├── examples/
 │   └── example_synthetic.R     # runnable end-to-end demo on simulated data
+├── shiny_app/                  # source of the online Shiny app
+│   ├── app.R
+│   ├── methods.R
+│   └── README.md
 ├── BayeSPeer.Rproj
 ├── .gitignore
 └── README.md

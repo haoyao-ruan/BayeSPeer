@@ -5,6 +5,9 @@ Ranking"** (Ruan, Wang, Lim & Wang). Upload a peer + self ranking dataset and
 get the final ranking estimates from BayeSPeer and the **13 baseline methods**
 compared in the paper, plus the real-world data analyses of Section 4.
 
+**Use it online:** <https://bayespeer.shinyapps.io/BayeSPeer/>
+(no installation needed). To run it locally instead, see below.
+
 ## Quick start
 
 ```r
